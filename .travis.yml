@@ -4,6 +4,6 @@ python:
 install:
   - pip install coveralls
 script:
-  coverage run --source=moscowdjango,meetup manage.py pytest
+  coverage run --source=moscowdjango,meetup manage.py test
 after_success:
   coveralls
